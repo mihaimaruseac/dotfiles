@@ -1,0 +1,26 @@
+[user]
+	email = FILL@THIS.IN
+	name = Mihai Maruseac
+[color]
+	ui = auto
+	pager = true
+[core]
+	editor = vim
+	excludesfile = /FILL/THIS/IN
+[alias]
+	gpr = pull --rebase
+	gap = add --patch
+	gdc = diff --cached
+	gdt = difftool
+	gst = status -sb
+[push]
+	default = current
+[diff]
+	tool = vimdiff
+	algorithm = histogram
+[merge]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[rerere]
+	enabled = true

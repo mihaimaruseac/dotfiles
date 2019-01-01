@@ -1,0 +1,12 @@
+# Linux :: hidden files and dirs, temp files
+.*
+!.gitignore
+!.gitattributes
+!.travis.yml
+*~
+
+# Tags :: Ignore tags created by etags and ctags
+TAGS
+!TAGS/
+tags
+!tags/

@@ -1,0 +1,37 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# Always use vim (also instead of vi)
+alias vi=vim
+export EDITOR="vim"
+
+# (v)dir and ls aliases: always use colors
+alias ls='ls --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias tree='tree -C'
+
+# MM: open all files with one extension
+vi_all ()
+{
+    echo "Looking for files named *.$1"
+    vim -p $(for i in `find . -name "*.$1"`; do echo -n $i " "; done)
+}
+
+# MM: open all files from a directory, recursively
+vi_tree ()
+{
+    echo "Opening all files in the tree of $1"
+    vim -p `find $1 -type f -exec echo -n {} " " \;`
+}
+
+# PS1 prompt
+PS1="[\W] \[\033[01;32m\]λ\[\033[00m\] "
+
+# MM: stack bash completion
+eval "$(stack --bash-completion-script stack)"
