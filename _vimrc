@@ -23,7 +23,7 @@ au FileType haskell set tw=78 sw=2 sts=2 et
 au FileType cabal set tw=78 sw=2 sts=2 et
 au FileType python set ai sw=4 sts=4 et tw=78
 au FileType matlab set sw=2 sts=2 noet
-"au FileType java set ai noet sw=2 sts=2 cin tw=78
+"au FileType java set ai noet sw=2 sts=2 tw=78
 au FileType java set tw=80
 au FileType tex set ai et sw=2 sts=2 tw=78
 "au FileType tex so ~/.vim/abbrevs.vim " from ddvlad - LaTeX mappings
