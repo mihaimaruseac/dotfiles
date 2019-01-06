@@ -17,6 +17,8 @@ set list listchars=tab:»\ ,trail:·,extends:»,precedes:« "whitespaces
 set tw=79 "implicit textwidth
 set hls "highlight search
 set spell
+set ignorecase
+set smartcase
 
 au FileType c,cpp,cu set tw=78 cino=:0 foldmethod=syntax
 au FileType haskell set tw=78 sw=2 sts=2 et
